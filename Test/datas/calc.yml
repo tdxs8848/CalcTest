@@ -22,4 +22,5 @@ div:
     - ["abc","123","输入类型错误"]
     - [2.4,0.8,3]
     - [10,6,1.67]
-  ids: ['int','zero_dtor','float_resut','zero_ntor','bignum','str','flost_dtor_ntor','longfloat']
+    - [10,-1,-10]
+  ids: ['int','zero_dtor','float_resut','zero_ntor','bignum','str','flost_dtor_ntor','longfloat','neg']

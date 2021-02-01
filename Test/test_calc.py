@@ -26,26 +26,31 @@ class TestCalc:
     add_datas: list = get_datas('add')
     div_datas: list = get_datas('div')
 
-    # 前置条件
-    def setup_class(self):
-        print("计算器测试开始......")
-        self.calc = Calculator()
+    # # 前置条件
+    # def setup_class(self):
+    #     print("计算器测试开始......")
+    #     self.calc = Calculator()
 
+    # @pytest.fixture()
+    # def setupfixtures(self):
+    #     print("计算器测试开始......")
+    #     self.calc = Calculator
 
-    def setup(self):
-        print("\n开始计算...")
+    # def setup(self):
+    #     print("\n开始计算...")
 
-    def teardown(self):
-        print("结束计算...")
+    # def teardown(self):
+    #     print("结束计算...")
 
     #后置条件
     def teardown_class(self):
         print("计算器测试结束......")
 
+
     @pytest.mark.parametrize("a, b, result", add_datas[0], ids=add_datas[1])
-    def test_add(self, a, b, result):
+    def test_add(self,calc, a, b, result):
         print(f"a={a} , b ={b} ,result={result}")
-        assert result == self.calc.add(a, b)
+        assert result == calc.add(a, b)
 
     # def test_add1(self):
     #     datas = [[1, 1, 2], [100, 400, 300], [1, 0, 1]]
@@ -56,6 +61,7 @@ class TestCalc:
     # done: 完善相加功能
     # done: 相除功能
     @pytest.mark.parametrize("a, b, result", div_datas[0], ids=div_datas[1])
-    def test_div(self,a,b,result):
+    def test_div(self,calc,a,b,result):
         print(f"a={a} , b ={b} ,result={result}")
-        assert result == self.calc.div(a, b)
+        assert result == calc.div(a, b)
+

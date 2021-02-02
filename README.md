@@ -11,9 +11,6 @@
 - 系统 windows
 - ide pycharm
 
-## 写在前面的话
-在使用本框架之前建议你已拥有python基础、pytest基本使用
-
 ## 目录文件
 - \Test\conftest           : 改造pytest中setup与teardown方法
 - \Test\pytest.ini         : 初始化pytest,自动生成allure报告

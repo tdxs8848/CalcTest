@@ -2,6 +2,9 @@
 - 改造pytest插件
 - 生成allure测试报告
 
+### 写在前面的话
+拥有简单python与pytest基础后即可使用该项目，强烈建议使用于Test目录下命令行（cmd）运行pytest。
+
 ## 环境准备
 - 安装 java
 - 安装 allure

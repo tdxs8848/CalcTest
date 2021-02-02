@@ -4,6 +4,7 @@
 
 ### 写在前面的话
 拥有简单python与pytest基础后即可使用该项目，强烈建议使用于Test目录下命令行（cmd）运行pytest。
+- 链接[pycharm运行参数化teardown的坑](https://blog.csdn.net/m0_46493851/article/details/113564004)
 
 ## 环境准备
 - 安装 java
@@ -13,6 +14,7 @@
 - 系统 windows
 - ide pycharm
 - chrome 88.0.4324.104（正式版本） （64 位）
+
 
 
 ## 目录文件

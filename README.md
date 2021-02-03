@@ -23,5 +23,5 @@
 - \Test\result             : 存放allure报告文件
 - \Test\bin\openReport.bat : 自动打开allure服务批处理文件
 - \Tset\driver             : 存放selenium浏览器驱动
-  
+- \Test\dist               : 存放python打包文件及setup.py模板文件
   
